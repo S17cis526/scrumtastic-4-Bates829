@@ -1,0 +1,3 @@
+CREATE TABLE sprints(
+  id INTEGER PRIMARY KEY
+);
