@@ -9,7 +9,7 @@ function create(req, res){
     var user = req.body;
     var salt = encryption.salt();
     var cryptedPassword = encryption.digest(user.password + salt);
-    db.run('INSET INTO users (eid, email, firstName, lastName, cryptedPassword)',[
+    db.run('INSERT INTO users (eid, email, firstName, lastName, cryptedPassword)',[
       user.eid,
       user.email,
       user.firstName,
